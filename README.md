@@ -12,6 +12,14 @@ Aardwolf MUD. It is a C++ Thin Client with the UI and Application
 Logic written in Javascript. The UI is furnished by QWebView, and
 JSCore is connected to exposed QObjects (QushieFile, QTelnet, QushieDatabase).
 
+### Components
+
+Qushie depends on the project https://github.com/jasonknight/qushie-app to
+actually run. You need to have both for it to actually work.
+
+Qushie is just a thin client, qushie-app is the code that actually
+does stuff.
+
 The main JS Space has the QRuntimeObject Qushie.
 
 ### To create a Socket/Telnet connection

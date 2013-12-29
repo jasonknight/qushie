@@ -39,11 +39,11 @@ void MainWindow::Init() {
     web_view->load(to_url);
     connect(web_view->page()->mainFrame(), SIGNAL(javaScriptWindowObjectCleared()),
             this, SLOT(attach()));
-    QWebInspector *inspector;
-    inspector = new QWebInspector();
-    inspector->setPage(web_view->page());
-    inspector->setGeometry(QRect(500, 10, 700, 500));
-    inspector->show();
+//    QWebInspector *inspector;
+//    inspector = new QWebInspector();
+//    inspector->setPage(web_view->page());
+//    inspector->setGeometry(QRect(500, 10, 700, 500));
+//    inspector->show();
 }
 void MainWindow::attach() {
     web_view->page()->mainFrame()->addToJavaScriptWindowObject("Qushie",this);
